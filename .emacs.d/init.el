@@ -8,8 +8,9 @@
 
 ;; Add in your own as you wish:
 (defvar my-packages '(starter-kit starter-kit-lisp starter-kit-bindings
-				  markdown-mode groovy-mode
-				  solarized-theme starter-kit-js)
+                                  starter-kit-js clojure-mode
+				  groovy-mode markdown-mode 
+				  solarized-theme)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
