@@ -34,10 +34,12 @@
   ;;   :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.2.196"}}}
   ;;   :test {:extra-paths ["test"]}
   ;; }
-  :aliases {:rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "0.1.4"}}
+  :aliases {:rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "RELEASE"}}
                     :main-opts  ["-m" "rebel-readline.main"]}
-            :rebel-cljs {:extra-deps {com.bhauman/rebel-readline-cljs {:mvn/version "0.1.4"}}
-                    :main-opts  ["-m" "rebel-readline.main"]}}
+            :rebel-cljs {:extra-deps {com.bhauman/rebel-readline-cljs {:mvn/version "RELEASE"}}
+                         :main-opts  ["-m" "rebel-readline.main"]}
+            :new {:extra-deps {seancorfield/clj-new {:mvn/version "RELEASE"}}
+                   :main-opts ["-m" "clj-new.create"]}}
 
   ;; Provider attributes
 
