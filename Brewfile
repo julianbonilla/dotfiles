@@ -1,19 +1,21 @@
 # `brew bundle install` to install/update packages
+
 cask_args appdir: "/Applications"
+
 tap "d12frosted/emacs-plus"
+tap "homebrew/cask-fonts"
 
 brew "emacs-plus@28"
-brew "git"
-brew "ripgrep"
-brew "wget"
-brew "tree"
-brew "imagemagick"
 brew "fish"
+brew "git"
+brew "imagemagick"
+brew "ripgrep"
+brew "tree"
+brew "wget"
 
 cask "alfred"
+cask "font-fira-code"
 cask "visual-studio-code"
-
-# tap "homebrew/cask-fonts"
 
 # brew "mas"
 
@@ -46,18 +48,13 @@ cask "visual-studio-code"
 # cask "makemkv"
 # cask "rocket"
 # cask "spotify"
-# cask "textmate"
 # cask "tower"
-# cask "visual-studio-code"
-# cask "font-fira-code"
 
 # brew "carthage"
-# brew "emacs"
 # brew "ffmpeg"
 # brew "mkvtoolnix"
 # brew "mp4v2"
 # brew "youtube-dl"
 # brew "wget"
 # brew "exiftool"
-# brew "fish"
 # brew "node"
