@@ -10,6 +10,7 @@ brew "fish"
 brew "git"
 brew "imagemagick"
 brew "ripgrep"
+brew "rlwrap"
 brew "tree"
 brew "wget"
 
