@@ -16,6 +16,7 @@ brew "wget"
 
 cask "alfred"
 cask "font-fira-code"
+cask "font-source-code-pro"
 cask "visual-studio-code"
 
 # brew "mas"
@@ -37,7 +38,6 @@ cask "visual-studio-code"
 
 # cask "1Password"
 # cask "aerial"
-# cask "alfred"
 # cask "colloquy"
 # cask "droplr"
 # cask "google-chrome"
