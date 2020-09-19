@@ -4,6 +4,7 @@ cask_args appdir: "/Applications"
 
 tap "d12frosted/emacs-plus"
 tap "homebrew/cask-fonts"
+tap "AdoptOpenJDK/openjdk"
 
 brew "emacs-plus@28"
 brew "fish"
@@ -17,6 +18,7 @@ brew "wget"
 cask "alfred"
 cask "font-fira-code"
 cask "font-source-code-pro"
+cask "adoptopenjdk11"
 cask "visual-studio-code"
 
 # brew "mas"
