@@ -13,6 +13,7 @@ brew "git"
 brew "imagemagick"
 brew "ripgrep"
 brew "rlwrap"
+brew "rsync"
 brew "tree"
 brew "wget"
 
