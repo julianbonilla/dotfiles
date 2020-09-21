@@ -8,6 +8,7 @@ tap "AdoptOpenJDK/openjdk"
 
 brew "clojure/tools/clojure"
 brew "emacs-plus@28"
+brew "exa"
 brew "fish"
 brew "git"
 brew "imagemagick"
