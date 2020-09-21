@@ -16,9 +16,9 @@
   ;; :paths ["src"]
 
   ;; External dependencies
-
+ 
   ;; :deps {
-  ;;   org.clojure/clojure {:mvn/version "1.9.0"}
+  ;;   org.clojure/clojure {:mvn/version "1.10.1"}
   ;; }
 
   ;; Aliases
@@ -31,7 +31,7 @@
 	;;     :classpath-overrides - map of lib to path that overrides the result of resolving deps
 
   ;; :aliases {
-  ;;   :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.2.196"}}}
+  ;;   :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.8.709"}}}
   ;;   :test {:extra-paths ["test"]}
   ;; }
   :aliases {:rebel {:extra-deps {com.bhauman/rebel-readline {:mvn/version "RELEASE"}}
@@ -45,6 +45,6 @@
 
   ;; :mvn/repos {
   ;;   "central" {:url "https://repo1.maven.org/maven2/"}
-  ;;   "clojars" {:url "https://clojars.org/repo"}
+  ;;   "clojars" {:url "https://repo.clojars.org/"}
   ;; }
 }
