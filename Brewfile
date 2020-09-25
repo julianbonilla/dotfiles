@@ -6,6 +6,7 @@ tap "d12frosted/emacs-plus"
 tap "homebrew/cask-fonts"
 tap "AdoptOpenJDK/openjdk"
 
+brew "aspell"
 brew "awscli"
 brew "clojure/tools/clojure"
 brew "emacs-plus@28"
