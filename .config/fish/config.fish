@@ -14,11 +14,11 @@ if status --is-interactive
         abbr --add l exa
         abbr --add ls exa
         abbr --add ll 'exa -l'
-        abbr --add lll 'exa -la'
+        abbr --add la 'exa -la'
     else
         abbr --add l ls
         abbr --add ll 'ls -l'
-        abbr --add lll 'ls -la'
+        abbr --add la 'ls -la'
     end
 end
 
