@@ -2,6 +2,7 @@
 
 cask_args appdir: "/Applications"
 
+tap "clojure/tools"
 tap "d12frosted/emacs-plus"
 tap "homebrew/cask-fonts"
 tap "AdoptOpenJDK/openjdk"
