@@ -24,14 +24,16 @@ brew "rsync"
 brew "tree"
 brew "wget"
 
+cask "adoptopenjdk11"
 cask "alfred"
 cask "font-fira-code"
 cask "font-source-code-pro"
-cask "adoptopenjdk11"
+cask "istat-menus"
 cask "visual-studio-code"
 
 # brew "mas"
 
+# mas "iStat Menus", id: 1319778037 
 # mas "1Blocker", id: 1107421413
 # mas "Day One", id: 1055511498
 # mas "Deliveries", id: 924726344
@@ -55,7 +57,6 @@ cask "visual-studio-code"
 # cask "handbrake"
 # cask "iina"
 # cask "imageoptim"
-# cask "istat-menus"
 # cask "keepingyouawake"
 # cask "makemkv"
 # cask "rocket"
