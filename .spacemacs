@@ -42,7 +42,10 @@ This function should only modify configuration layer settings."
      (auto-completion
       :variables
       auto-completion-enable-snippets-in-popup t)
-     clojure
+     (clojure :variables
+              clojure-enable-clj-refactor t
+              clojure-enable-linters 'clj-kondo
+              cider-overlays-use-font-lock t)
      emacs-lisp
      (git
       :variables
