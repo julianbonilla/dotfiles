@@ -24,6 +24,7 @@ brew "tree"
 brew "wget"
 
 cask "google-chrome"
+cask "google-cloud-sdk"
 cask "postman"
 cask "raycast"
 cask "visual-studio-code"
