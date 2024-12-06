@@ -23,6 +23,7 @@ brew "starship"
 brew "tree"
 brew "wget"
 
+cask "discord"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "postman"
