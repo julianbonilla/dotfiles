@@ -24,6 +24,7 @@ brew "tree"
 brew "wget"
 
 cask "discord"
+cask "docker"
 cask "google-chrome"
 cask "google-cloud-sdk"
 cask "postman"
