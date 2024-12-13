@@ -23,6 +23,7 @@ brew "starship"
 brew "tree"
 brew "wget"
 
+cask "datagrip"
 cask "discord"
 cask "docker"
 cask "google-chrome"
