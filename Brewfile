@@ -26,6 +26,7 @@ brew "rlwrap"
 brew "rsync"
 brew "starship"
 brew "tree"
+brew "uv"
 brew "wget"
 
 cask "datagrip"
