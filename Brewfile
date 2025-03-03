@@ -30,6 +30,7 @@ brew "tree"
 brew "uv"
 brew "wget"
 
+cask "claude"
 cask "datagrip"
 cask "discord"
 cask "docker"
