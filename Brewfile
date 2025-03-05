@@ -40,6 +40,7 @@ cask "google-cloud-sdk"
 cask "postman"
 cask "raycast"
 cask "visual-studio-code"
+cask "visual-studio-code@insiders"
 
 # brew "mas"
 
