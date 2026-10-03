@@ -27,6 +27,14 @@ brew "tree"
 brew "uv"
 brew "wget"
 
+# CLI essentials
+brew "bat"
+brew "fd"
+brew "fzf"
+brew "lazygit"
+brew "ripgrep"
+brew "zoxide"
+
 cask "claude"
 cask "datagrip"
 cask "discord"

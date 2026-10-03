@@ -47,6 +47,13 @@ fi
 echo "→ Installing fisher + plugins…"
 "$FISH" -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher; and fisher update"
 
+# 6. LazyVim starter (only if no nvim config exists — never clobbers) -----------
+if [ ! -d ~/.config/nvim ]; then
+  echo "→ Installing LazyVim starter…"
+  git clone --quiet https://github.com/LazyVim/starter ~/.config/nvim
+  rm -rf ~/.config/nvim/.git
+fi
+
 echo ""
 echo "Done. Next steps:"
 echo "  1. Open a new terminal (Ghostty) — you should be in fish."

@@ -21,3 +21,8 @@ if status --is-interactive
         abbr --add la 'ls -la'
     end
 end
+
+# zoxide (smarter cd)
+if command -v zoxide > /dev/null
+    zoxide init fish | source
+end
