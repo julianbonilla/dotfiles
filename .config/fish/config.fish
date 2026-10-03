@@ -21,9 +21,3 @@ if status --is-interactive
         abbr --add la 'ls -la'
     end
 end
-
-# base16 themes (only if the checkout exists)
-if status --is-interactive; and test -d ~/projects/base16-fish
-    set fish_function_path $fish_function_path ~/projects/base16-fish/functions
-    builtin source ~/projects/base16-fish/conf.d/base16.fish
-end
