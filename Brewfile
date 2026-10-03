@@ -37,7 +37,6 @@ brew "zoxide"
 
 # AI CLIs
 brew "aider"
-brew "gemini-cli"
 
 cask "claude"
 cask "claude-code"
