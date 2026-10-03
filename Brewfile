@@ -35,7 +35,13 @@ brew "lazygit"
 brew "ripgrep"
 brew "zoxide"
 
+# AI CLIs
+brew "aider"
+brew "gemini-cli"
+
 cask "claude"
+cask "claude-code"
+cask "codex"
 cask "datagrip"
 cask "discord"
 cask "docker"
