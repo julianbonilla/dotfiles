@@ -1,1 +1,17 @@
-Prefs for how I like things
+# dotfiles
+
+My machine setup. One command:
+
+```sh
+git clone https://github.com/julianbonilla/dotfiles.git ~/dotfiles
+~/dotfiles/bootstrap.sh
+```
+
+`bootstrap.sh` (idempotent — safe to re-run) installs Homebrew, runs
+`brew bundle`, symlinks the configs, sets fish as the default shell, and
+installs fisher plus the tide prompt (plugins are declared in
+`.config/fish/fish_plugins`).
+
+Afterwards: open a new terminal and run `tide configure` — or copy
+`~/.config/fish/fish_variables` from another machine for the identical
+prompt.

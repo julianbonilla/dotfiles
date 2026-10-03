@@ -1,0 +1,2 @@
+# Nerd Font is required for the tide prompt glyphs (installed via Brewfile).
+font-family = "MesloLGS Nerd Font"

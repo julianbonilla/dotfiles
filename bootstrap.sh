@@ -28,6 +28,7 @@ brew bundle --file="$DOTFILES/Brewfile" --no-lock
 echo "→ Linking configs…"
 mkdir -p ~/.config
 ln -sfn "$DOTFILES/.config/fish" ~/.config/fish
+ln -sfn "$DOTFILES/.config/ghostty" ~/.config/ghostty
 ln -sfn "$DOTFILES/Brewfile" ~/Brewfile   # keeps `brew bundle --global` working, your old habit
 
 # 4. Fish as the default shell ----------------------------------------------
@@ -42,8 +43,9 @@ if [ "${SHELL:-}" != "$FISH" ]; then
 fi
 
 # 5. Fisher + Tide prompt ----------------------------------------------------
-echo "→ Installing fisher + tide…"
-"$FISH" -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher IlanCosman/tide@v6"
+# Plugins are declared in .config/fish/fish_plugins; `fisher update` installs them.
+echo "→ Installing fisher + plugins…"
+"$FISH" -c "curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish | source; and fisher install jorgebucaran/fisher; and fisher update"
 
 echo ""
 echo "Done. Next steps:"
@@ -51,5 +53,3 @@ echo "  1. Open a new terminal (Ghostty) — you should be in fish."
 echo "  2. Run: tide configure   (pick the same style as your work laptop)"
 echo "     Tip: to copy the exact prompt, copy ~/.config/fish/fish_variables"
 echo "     from your work laptop instead — that's where tide saves its config."
-echo "  3. In Ghostty, set the font to a Nerd Font so tide's glyphs render:"
-echo "     add  font-family = \"MesloLGS Nerd Font\"  to ~/.config/ghostty/config"
