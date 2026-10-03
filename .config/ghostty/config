@@ -1,2 +1,5 @@
 # Nerd Font is required for the tide prompt glyphs (installed via Brewfile).
 font-family = "MesloLGS Nerd Font"
+
+# Tokyo Night, following the macOS light/dark appearance.
+theme = light:TokyoNight Day,dark:TokyoNight Night
