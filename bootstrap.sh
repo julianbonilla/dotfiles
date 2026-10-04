@@ -22,7 +22,7 @@ fi
 
 # 2. Packages ---------------------------------------------------------------
 echo "→ brew bundle (this takes a while on first run)…"
-brew bundle --file="$DOTFILES/Brewfile" --no-lock
+brew bundle --file="$DOTFILES/Brewfile"
 
 # 3. Symlink configs into place ---------------------------------------------
 echo "→ Linking configs…"
