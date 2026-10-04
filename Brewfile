@@ -2,12 +2,9 @@
 
 cask_args appdir: "/Applications"
 
-tap "d12frosted/emacs-plus"
-
 brew "aspell"
 brew "awscli"
 brew "cfn-lint"
-brew "emacs-plus"
 brew "kubectl"
 brew "findutils"
 brew "ffmpeg"
@@ -18,21 +15,20 @@ brew "imagemagick"
 brew "jq"
 brew "neovim"
 brew "nvm"
-brew "openjdk@17"
 brew "python"
-brew "rlwrap"
-brew "rsync"
-brew "eza"
-brew "tree"
 brew "uv"
-brew "wget"
 
 # CLI essentials
 brew "bat"
+brew "eza"
 brew "fd"
 brew "fzf"
 brew "lazygit"
 brew "ripgrep"
+brew "rlwrap"
+brew "rsync"
+brew "tree"
+brew "wget"
 brew "zoxide"
 
 # AI CLIs
@@ -52,7 +48,6 @@ cask "muse"
 cask "postman"
 cask "raycast"
 cask "visual-studio-code"
-cask "visual-studio-code@insiders"
 
 # brew "mas"
 
