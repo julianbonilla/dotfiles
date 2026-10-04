@@ -1,4 +1,4 @@
-# `brew bundle install --no-lock` to install/update packages
+# `brew bundle` to install/update packages
 
 cask_args appdir: "/Applications"
 
@@ -47,6 +47,7 @@ cask "google-cloud-sdk"
 cask "muse"
 cask "postman"
 cask "raycast"
+cask "tailscale-app"
 cask "visual-studio-code"
 
 # brew "mas"
