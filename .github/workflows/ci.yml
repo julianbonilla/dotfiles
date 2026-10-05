@@ -1,0 +1,44 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: install shellcheck
+        run: sudo apt-get update && sudo apt-get install -y shellcheck
+      - name: shellcheck
+        run: shellcheck bootstrap.sh
+
+  bootstrap:
+    runs-on: macos-latest
+    env:
+      DOTFILES_SKIP_PACKAGES: "1"   # full Brewfile (casks, docker, etc.) is too slow for CI
+    steps:
+      - uses: actions/checkout@v4
+
+      # bootstrap needs fish present even when brew bundle is skipped
+      - run: brew install fish
+
+      - name: bootstrap (first run)
+        run: ./bootstrap.sh
+
+      - name: bootstrap (second run — idempotency)
+        run: ./bootstrap.sh
+
+      - name: verify links
+        run: |
+          set -e
+          for d in fish ghostty; do
+            test -L "$HOME/.config/$d"
+            test "$(readlink "$HOME/.config/$d")" = "$GITHUB_WORKSPACE/.config/$d"
+          done
+          test -L "$HOME/.Brewfile"
+          test "$(readlink "$HOME/.Brewfile")" = "$GITHUB_WORKSPACE/Brewfile"
+          # second run must not have created backups
+          test -z "$(find "$HOME" -maxdepth 2 -name '*.bak.*')"
